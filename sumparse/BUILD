@@ -36,7 +36,7 @@ cc_test(
     deps = [
         ":sumparse",
         ":hashsum_cc_proto",
-        "//sumparse/testing:assertions",
+        "@rhutil//rhutil/testing:protobuf_assertions",
         "@rhutil//rhutil/testing:assertions",
         "@com_google_protobuf//:protobuf",
         "@googletest//:gtest_main",

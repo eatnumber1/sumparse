@@ -8,7 +8,7 @@
 #include "gtest/gtest.h"
 #include "rhutil/status.h"
 #include "rhutil/testing/assertions.h"
-#include "sumparse/testing/assertions.h"
+#include "rhutil/testing/protobuf_assertions.h"
 #include "absl/strings/str_format.h"
 #include "sumparse/hashsum.pb.h"
 #include "google/protobuf/io/zero_copy_stream_impl.h"
@@ -17,6 +17,7 @@
 namespace sumparse {
 
 using ::rhutil::IsOk;
+using ::rhutil::IsEqual;
 using ::rhutil::StatusOr;
 using ::rhutil::UnknownError;
 using ::google::protobuf::io::IstreamInputStream;
